@@ -2,6 +2,8 @@
 
 Aplicacao focada em criacao de usuarios e gerencimanto de tarefas com autenticacao JWT, integracao com Banco de Dados usando pgAdmin. O aplicativo permite que usuários façam login com credenciais previamente registradas para criar e gerenciar suas próprias tarefas. Após o login, é possível adicionar, atualizar ou remover workspaces e tarefas. Os dados são armazenados em um banco de dados PostgreSQL. O perfil do usuário também pode ser atualizado.
 
+![Captura de tela 2025-05-22 155004](https://github.com/user-attachments/assets/6f9989a2-599d-4e9e-b127-e42a181a98ba)
+
 ---
 
 ## Funcionalidades
@@ -81,7 +83,20 @@ JWT_SECRET=
 REFRESH_JWT_SECRET=
 ```
 
-> - A pasta **`frontend/`** contém o frontend em **React**.
+> - A pasta **`frontend/`** contém o frontend em **React**. O .env deve ser configurado da seguinte maneira:
+
+```bash
+VITE_BACKEND_ADDR=http://localhost:4000
+VITE_API_LOGIN=${VITE_BACKEND_ADDR}/api/auth/login
+VITE_API_LOGOUT=${VITE_BACKEND_ADDR}/api/auth/logout
+VITE_API_REGISTER=${VITE_BACKEND_ADDR}/api/auth/register
+VITE_API_JWT_REFRESH=${VITE_BACKEND_ADDR}/api/auth/refresh
+VITE_API_WORKSPACES=${VITE_BACKEND_ADDR}/api/workspaces
+VITE_API_BOARDS=${VITE_BACKEND_ADDR}/api/boards
+VITE_API_LISTS=${VITE_BACKEND_ADDR}/api/lists
+VITE_API_CARDS=${VITE_BACKEND_ADDR}/api/cards
+VITE_API_USER=${VITE_BACKEND_ADDR}/api/user
+```
 
 Para executar o projeto corretamente, siga as instruções abaixo:
 
@@ -107,13 +122,14 @@ Para executar o projeto corretamente, siga as instruções abaixo:
 </code></pre>
 
 <h3>3. Configure o arquivo <code>.env</code> na raiz da pasta <code>backend/</code> com as variáveis necessárias (exemplo):</h3>
-<pre><code>DATABASE_URL="postgresql://usuario:senha@localhost:5432/nome_do_banco"
+<pre><code>DATABASE_URL="postgresql://usuario:senha@localhost:5432/nome_do_banco" (precisa ser criado um banco de dados no pgAdmin)
 JWT_SECRET="sua_chave_secreta"
 </code></pre>
 
 <blockquote>
   <p>⚠️ O arquivo <code>.env</code> <strong>não está incluído</strong> no repositório por questões de segurança.<br>
-  Ele é essencial para conectar ao banco de dados e gerar tokens JWT.</p>
+  Ele é essencial para conectar ao banco de dados e gerar tokens JWT.
+  Importante ter o pgAdmin instalado e configurado, usuario é seu owner e senha, a senha do seu superuser</p>
 </blockquote>
 
 <h3>4. Gere o client do Prisma e execute as migrações (se aplicável):</h3>
