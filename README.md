@@ -4,6 +4,8 @@ Aplicacao focada em criacao de usuarios e gerencimanto de tarefas com autenticac
 
 ![Captura de tela 2025-05-22 155004](https://github.com/user-attachments/assets/6f9989a2-599d-4e9e-b127-e42a181a98ba)
 
+Vídeo demonstrativo: https://youtu.be/FKS8Zi0oNE4
+
 ---
 
 ## Imagens do projeto
