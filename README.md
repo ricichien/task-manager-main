@@ -23,6 +23,7 @@ Aplicacao focada em criacao de usuarios e gerencimanto de tarefas com autenticac
 -Sistema completo de cadastro, login e logout de usuários
 -Acesso às tarefas restrito a usuários autenticados
 -Sessões seguras com JWT (JSON Web Tokens)
+-Rotas protetivas (Public e Private (Private precisa de Login))
 
 ## Backend
 
