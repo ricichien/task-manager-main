@@ -6,6 +6,10 @@ Aplicacao focada em criacao de usuarios e gerencimanto de tarefas com autenticac
 
 ---
 
+## Imagens do projeto
+
+![image](https://github.com/user-attachments/assets/97e26e7d-aae4-45d1-ae26-b3bdb7f9e4de)
+
 ## Funcionalidades
 
 ### Gerenciamento de Tarefas e Perfil
