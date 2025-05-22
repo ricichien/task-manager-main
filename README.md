@@ -19,11 +19,11 @@ Aplicacao focada em criacao de usuarios e gerencimanto de tarefas com autenticac
 
 ### Autenticação e Controle de Acesso
 
--bcryptjs para hash seguro de senhas
--Sistema completo de cadastro, login e logout de usuários
--Acesso às tarefas restrito a usuários autenticados
--Sessões seguras com JWT (JSON Web Tokens)
--Rotas protetivas (Public e Private (Private precisa de Login))
+- bcryptjs para hash seguro de senhas
+- Sistema completo de cadastro, login e logout de usuários
+- Acesso às tarefas restrito a usuários autenticados
+- Sessões seguras com JWT (JSON Web Tokens)
+- Rotas protetivas (Public e Private (Private precisa de Login))
 
 ## Backend
 
