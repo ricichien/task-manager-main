@@ -121,8 +121,8 @@ Para executar o projeto corretamente, siga as instruções abaixo:
 <pre><code>npm install
 </code></pre>
 
-<h3>3. Configure o arquivo <code>.env</code> na raiz da pasta <code>backend/</code> com as variáveis necessárias (exemplo):</h3>
-<pre><code>DATABASE_URL="postgresql://usuario:senha@localhost:5432/nome_do_banco" (precisa ser criado um banco de dados no pgAdmin)
+<h3>3. Configure o arquivo <code>.env</code> na raiz da pasta <code>backend/</code> com as variáveis necessárias (exemplo a seguir) (Precisa ser criado um banco de dados no pgAdmin):</h3>
+<pre><code>DATABASE_URL="postgresql://usuario:senha@localhost:5432/nome_do_banco"
 JWT_SECRET="sua_chave_secreta"
 </code></pre>
 
