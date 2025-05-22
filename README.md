@@ -36,8 +36,8 @@ Vídeo demonstrativo: https://youtu.be/FKS8Zi0oNE4
 ## Frontend
 
 - Interface desenvolvida com React.js
-- Estilização moderna com Material UI
-- Formulários reativos com React Hook Form + Zod para validação robusta
+- Estilização com Material UI
+- Formulários com React Hook Form + Zod para validação
 - Feedback ao usuário via toasts
 - Consumo e cache de dados com TanStack Query (React Query)
 
